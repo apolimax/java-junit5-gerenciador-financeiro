@@ -1,5 +1,7 @@
 package br.rn.will.seuBarriga.domain;
 
+import java.util.Objects;
+
 import br.rn.will.seuBarriga.domain.exceptions.ValidationException;
 
 public class Usuario {
@@ -33,6 +35,24 @@ public class Usuario {
 		this.nome = nome;
 		this.email = email;
 		this.senha = senha;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(email, nome, senha);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Usuario other = (Usuario) obj;
+		return Objects.equals(email, other.email) && Objects.equals(nome, other.nome)
+				&& Objects.equals(senha, other.senha);
 	}
 
 }
