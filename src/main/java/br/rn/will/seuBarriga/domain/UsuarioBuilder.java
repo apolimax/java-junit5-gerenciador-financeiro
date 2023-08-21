@@ -1,6 +1,4 @@
-package br.rn.will.seuBarriga.domain.builders;
-
-import br.rn.will.seuBarriga.domain.Usuario;
+package br.rn.will.seuBarriga.domain;
 
 public class UsuarioBuilder {
 	private Long id;

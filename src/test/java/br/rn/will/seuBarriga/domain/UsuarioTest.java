@@ -8,7 +8,6 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
-import br.rn.will.seuBarriga.domain.builders.UsuarioBuilder;
 import br.rn.will.seuBarriga.domain.exceptions.ValidationException;
 
 @DisplayName("Domínio: Usuário")
@@ -24,7 +23,6 @@ public class UsuarioTest {
 				() -> assertEquals("Usuario Valido", usuario.getNome()),
 				() -> assertEquals("email@gmail.com", usuario.getEmail()),
 				() -> assertEquals("123456", usuario.getSenha())
-				
 		);
 	}
 	

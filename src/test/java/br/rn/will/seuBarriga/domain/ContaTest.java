@@ -9,8 +9,6 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-import br.rn.will.seuBarriga.domain.builders.ContaBuilder;
-import br.rn.will.seuBarriga.domain.builders.UsuarioBuilder;
 import br.rn.will.seuBarriga.domain.exceptions.ValidationException;
 
 @DisplayName("Domínio: Conta")

@@ -1,7 +1,4 @@
-package br.rn.will.seuBarriga.domain.builders;
-
-import br.rn.will.seuBarriga.domain.Conta;
-import br.rn.will.seuBarriga.domain.Usuario;
+package br.rn.will.seuBarriga.domain;
 
 public class ContaBuilder {
 	private Long id;
